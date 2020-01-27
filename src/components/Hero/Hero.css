@@ -3,6 +3,7 @@
   background: #000;
   color: #fff;
   text-align: center;
+  /* max-width: 400px !important; */
 }
 
 .heroImage {
@@ -10,9 +11,17 @@
     Ensure golden ratio for the hero size while limiting it to some extend to
     the viewport width
   */
-  height: 61.8vh;
-  max-height: 400px;
+  height: 20vh;
 }
+
+/* img {
+  height: 100%;
+  width: 100%;
+}
+
+.imgContainer {
+  width:400px;
+} */
 
 .heroDetails {
   position: absolute;

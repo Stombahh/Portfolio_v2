@@ -3,8 +3,10 @@ import { graphql } from 'gatsby'
 import get from 'lodash/get'
 import Helmet from 'react-helmet'
 import Hero from '../components/Hero/Hero'
-import Layout from '../components/layout'
+import Layout from '../components/Layout'
 import ArticlePreview from '../components/ArticlePreview/ArticlePreview'
+import 'bootstrap/dist/css/bootstrap.min.css';
+
 
 class RootIndex extends React.Component {
   render() {
@@ -73,8 +75,9 @@ export const pageQuery = graphql`
             fluid(
               maxWidth: 1180
               maxHeight: 480
+              quality: 100
               resizingBehavior: PAD
-              background: "rgb:000000"
+              background: "white"
             ) {
               ...GatsbyContentfulFluid_tracedSVG
             }
