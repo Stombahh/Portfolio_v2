@@ -30,5 +30,14 @@ module.exports = {
       resolve: 'gatsby-source-contentful',
       options: contentfulConfig,
     },
+    {
+      resolve: 'gatsby-plugin-web-font-loader',
+      options: {
+        custom: {
+          families: ['runescape_uf'],
+          urls: ['/fonts/fonts.css'],
+        },
+      },
+    },
   ],
 }
