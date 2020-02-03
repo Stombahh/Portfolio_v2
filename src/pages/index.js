@@ -7,7 +7,6 @@ import Layout from '../components/Layout'
 import ArticlePreview from '../components/ArticlePreview/ArticlePreview'
 import 'bootstrap/dist/css/bootstrap.min.css';
 
-
 class RootIndex extends React.Component {
   render() {
     const siteTitle = get(this, 'props.data.site.siteMetadata.title')
@@ -73,10 +72,10 @@ export const pageQuery = graphql`
           title
           heroImage: image {
             fluid(
-              maxWidth: 1180
-              maxHeight: 480
+              maxWidth: 400
+              maxHeight: 400
               quality: 100
-              resizingBehavior: PAD
+              resizingBehavior: CROP
               background: "white"
             ) {
               ...GatsbyContentfulFluid_tracedSVG

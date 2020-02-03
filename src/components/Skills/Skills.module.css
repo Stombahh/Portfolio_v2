@@ -1,0 +1,19 @@
+.card {
+    border: 5px solid red;
+}
+
+.cardTitle {
+    text-align: center !important;
+}
+
+.skillsWrapper {
+    display: flex;
+    flex-direction: row;
+}
+
+svg {
+    width: 10vh;
+    height: auto;
+    margin: auto;
+    color: rgb(25, 74, 94); 
+}
