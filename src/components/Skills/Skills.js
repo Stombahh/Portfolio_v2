@@ -19,6 +19,7 @@ class Skills extends React.Component {
   render() {
     return (
       <div className="wrapper">
+        <h1 style={{textAlign: 'center', paddingBottom: '20px'}}>Skills</h1>
         <Row>
           <Col lg={4}>
             <h2>Technologies</h2>

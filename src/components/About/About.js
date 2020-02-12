@@ -8,9 +8,7 @@ const About = () => {
 
   const data = useStaticQuery(graphql` 
     query {
-      allContentfulPerson(
-        filter: { contentful_id: { eq: "15jwOBqpxqSAOy2eOO4S0m" } }
-      ) {
+      allContentfulPerson {
         edges {
           node {
             name
@@ -39,7 +37,7 @@ const About = () => {
   return (
     <div className={styles.hero}>
       <div className="wrapper">
-      <h1>About</h1>
+      <h1 style={{textAlign: 'center', paddingBottom: '20px'}}>About</h1>
         <div className={styles.test}>
           <div className={styles.imgContainer}>
             <Img

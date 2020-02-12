@@ -10,7 +10,6 @@ class Landing extends React.Component {
         <div id="stars" />
         <div id="stars2" />
         <div id="stars3" />
-        {/* <div className="overlay-intro"></div> */}
         <div className="intro-content display-table">
           <div className="table-cell">
             <div className="container">

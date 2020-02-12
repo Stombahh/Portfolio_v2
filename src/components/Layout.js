@@ -5,8 +5,7 @@ import Navigation from './Navigation/Navigation'
 import Landing from './Landing/Landing'
 import Skills from './Skills/Skills'
 import About from './About/About'
-
-
+import Projects from './Projects/Projects'
 
 class Template extends React.Component {
   render() {
@@ -17,9 +16,10 @@ class Template extends React.Component {
       <div>
         <Landing />
         <Navigation />
-        <div style={{ maxWidth: 1180, margin: '0 auto' }}>
+        <div style={{ maxWidth: 1500, margin: '0 auto'}}>
           <About />
           <Skills />
+          <Projects />
         </div>
       </div>
     )
