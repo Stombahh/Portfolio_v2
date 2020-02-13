@@ -18,6 +18,21 @@
 .navigationItem a {
   color: currentColor;
 } */
+
+.customNav {
+  background: radial-gradient(ellipse at top, #1b2735 0%, #090a0f 100%);
+}
+
+.navbar-brand {
+  font-size: 20pt;
+  color: white !important;
+}
+
+.nav-link {
+  font-size: 16pt;
+  color: rgb(25,74,94) !important;
+}
+
 .navbar-b {
   transition: all .5s ease-in-out;
   background-color: transparent;

@@ -1,20 +1,16 @@
-import React from 'react'
+import React from "react";
 // import { Link } from 'gatsby'
-// import styles from './Navigation.css'
+import styles from "./Navigation.css";
 // import $ from 'jquery';
+import "./Navigation.css";
 
-import Navbar from 'react-bootstrap/Navbar';
-import Nav from 'react-bootstrap/Nav';
-
+import Navbar from "react-bootstrap/Navbar";
+import Nav from "react-bootstrap/Nav";
 
 class Navigation extends React.Component {
-
-
-
   render() {
     return (
-
-      <Navbar sticky="top" bg="light" expand="lg">
+      <Navbar sticky="top" className="customNav" expand="lg">
         <Navbar.Brand href="#home">Tommi Ilvonen</Navbar.Brand>
         <Navbar.Toggle aria-controls="basic-navbar-nav" />
         <Navbar.Collapse id="basic-navbar-nav">
@@ -24,7 +20,7 @@ class Navigation extends React.Component {
           </Nav>
         </Navbar.Collapse>
       </Navbar>
-    )
+    );
   }
 }
 

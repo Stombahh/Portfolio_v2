@@ -15,9 +15,23 @@ body {
   margin: 0;
 }
 
+.btn {
+  background-color: #004d66 !important;
+  border-color: #004d66;
+}
+
 img {
   display: block;
   /* width: 100%; */
+}
+
+/* h1 {
+  text-align: center;
+  padding-bottom: 20px;
+}  */
+
+u {
+  color: rgb(25, 74, 94)
 }
 
 h1,

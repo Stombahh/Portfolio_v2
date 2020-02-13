@@ -1,35 +1,38 @@
-import React from 'react'
-import Img from 'gatsby-image'
-import Card from 'react-bootstrap/Card';
-import Button from 'react-bootstrap/Button';
-import Modal from 'react-bootstrap/Modal';
+import React from "react";
+import Img from "gatsby-image";
+import Card from "react-bootstrap/Card";
+import Button from "react-bootstrap/Button";
+import Modal from "react-bootstrap/Modal";
+import Carousel from "react-bootstrap/Carousel";
 
-const Project = ({project}) => {
+import "./Project.css";
 
-  function MyVerticallyCenteredModal(props) {
+const Project = ({ project }) => {
+  function ProjectModal(props) {
     return (
       <Modal
+        id={project.id}
         {...props}
         size="lg"
-        aria-labelledby="contained-modal-title-vcenter"
         centered
-        animation
-        autoFocus
       >
-        <Modal.Header closeButton>
-          <Modal.Title id="contained-modal-title-vcenter">
-            Modal heading
-          </Modal.Title>
+        <Carousel interval={null}>
+          {project.otherImages.map(({ fluid }) => {
+            return (
+              <Carousel.Item style={{ background: "black" }}>
+                <img src={fluid.src} />
+              </Carousel.Item>
+            );
+          })}
+        </Carousel>
+        <Modal.Header>
+          <Modal.Title>{project.title}</Modal.Title>
         </Modal.Header>
         <Modal.Body>
-          <h4>Centered Modal</h4>
-          <p>
-            Cras mattis consectetur purus sit amet fermentum. Cras justo odio,
-            dapibus ac facilisis in, egestas eget quam. Morbi leo risus, porta ac
-            consectetur ac, vestibulum at eros.
-          </p>
+          <p>{project.fullDescription.fullDescription}</p>
+          <p>{project.technologies}</p>
         </Modal.Body>
-        <Modal.Footer>
+        <Modal.Footer style={{ justifyContent: "left" }}>
           <Button onClick={props.onHide}>Close</Button>
         </Modal.Footer>
       </Modal>
@@ -38,30 +41,21 @@ const Project = ({project}) => {
   const [modalShow, setModalShow] = React.useState(false);
 
   return (
-    
     <div>
-        <Card style={{maxHeight: '60vh'}}>
-          <div style={{overflow: 'hidden'}}>
-            <Img
-              fluid={project.previewImage.fluid}
-            />
-          </div>
-          <Card.Body>
-            <Card.Title>{project.title}</Card.Title>
-            <Card.Text>
-              {project.shortDescription}
-            </Card.Text>
-            <Card.Text>{project.technologies}</Card.Text>
-            <Button variant="primary" onClick={() => setModalShow(true)}>
-              Learn more
-            </Button>
-
-            <MyVerticallyCenteredModal
-              show={modalShow}
-              onHide={() => setModalShow(false)}
-            />
-          </Card.Body>
-        </Card>
+      <Card>
+        <div style={{ overflow: "hidden" }}>
+          <Img className="previewImage" fluid={project.previewImage.fluid} />
+        </div>
+        <Card.Body>
+          <Card.Title>{project.title}</Card.Title>
+          <Card.Text>{project.shortDescription}</Card.Text>
+          <Card.Text>{project.technologies}</Card.Text>
+        </Card.Body>
+        <Card.Body style={{ paddingTop: "0" }}>
+          <Button onClick={() => setModalShow(true)}>Learn more</Button>
+        </Card.Body>
+      </Card>
+      <ProjectModal show={modalShow} onHide={() => setModalShow(false)} />
     </div>
   );
 };

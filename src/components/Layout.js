@@ -6,6 +6,8 @@ import Landing from './Landing/Landing'
 import Skills from './Skills/Skills'
 import About from './About/About'
 import Projects from './Projects/Projects'
+import Contact from './Contact/Contact'
+import Footer from './Footer';
 
 class Template extends React.Component {
   render() {
@@ -20,7 +22,9 @@ class Template extends React.Component {
           <About />
           <Skills />
           <Projects />
+          <Contact />
         </div>
+          <Footer />
       </div>
     )
   }
