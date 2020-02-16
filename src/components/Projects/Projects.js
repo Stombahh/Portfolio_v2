@@ -3,6 +3,7 @@ import { useStaticQuery, graphql } from "gatsby";
 import CardColumns from "react-bootstrap/CardColumns";
 
 import Project from "./Project/Project";
+import Title from "../Title";
 
 // import styles from './Projects.module.css'
 // import './Projects.module.css'
@@ -42,8 +43,8 @@ const Projects = () => {
   const projects = data.allContentfulProject.edges;
 
   return (
-    <div>
-      <h1 style={{ textAlign: "center", paddingBottom: "20px" }}>Projects</h1>
+    <div id="projects">
+      <Title>PROJECTS</Title>
       <CardColumns>
         {projects.map(({ node }) => {
           return <Project project={node} />;

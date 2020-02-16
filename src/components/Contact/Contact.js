@@ -1,26 +1,28 @@
 import React from "react";
-import Form from 'react-bootstrap/Form';
-import Button from 'react-bootstrap/Button';
-import styles from './Contact.module.css';
+import Form from "react-bootstrap/Form";
+import Button from "react-bootstrap/Button";
+import styles from "./Contact.module.css";
+import Title from "../Title";
 
 const Contact = () => {
+  const [validated, setValidated] = React.useState(false);
 
-    const [validated, setValidated] = React.useState(false);
-  
-    const handleSubmit = event => {
-      const form = event.currentTarget;
-      if (form.checkValidity() === false) {
-        event.preventDefault();
-        event.stopPropagation();
-      }
-  
-      setValidated(true);
-    };
+  const handleSubmit = event => {
+    const form = event.currentTarget;
+    if (form.checkValidity() === false) {
+      event.preventDefault();
+      event.stopPropagation();
+    }
+
+    setValidated(true);
+  };
 
   return (
-    <div className={styles.contactWrapper}>
-      <h1 style={{ textAlign: "center", paddingBottom: "20px" }}>Contact</h1>
-      <p style={{textAlign: "center"}}>Have a question or want to work together?</p>
+    <div id="contact" className={styles.contactWrapper}>
+      <Title>CONTACT</Title>
+      <p style={{ textAlign: "center" }}>
+        Have a question or want to work together?
+      </p>
       <Form noValidate validated={validated} onSubmit={handleSubmit}>
         <Form.Group controlId="formEmail">
           <Form.Control required type="email" placeholder="Your email" />
@@ -41,12 +43,18 @@ const Contact = () => {
           </Form.Control.Feedback>
         </Form.Group>
         <Form.Group controlId="formMessage">
-          <Form.Control required as="textarea" rows="3" placeholder="Your message" /><Form.Control.Feedback type="invalid">
+          <Form.Control
+            required
+            as="textarea"
+            rows="3"
+            placeholder="Your message"
+          />
+          <Form.Control.Feedback type="invalid">
             Please enter your message
           </Form.Control.Feedback>
         </Form.Group>
 
-        <Button variant="primary" type="submit">
+        <Button type="submit">
           Submit
         </Button>
       </Form>

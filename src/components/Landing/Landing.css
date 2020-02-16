@@ -46,43 +46,17 @@ span {
 
 .intro .intro-title {
   color: #fff;
-  font-weight: 600;
+  font-weight: 100;
   font-size: 3rem;
+  font-family: Passion One;
 }
 
-.intro .intro-subtitle {
-  font-size: 1.5rem;
-  font-weight: 300;
-}
-
-.intro-single {
-  height: 350px;
-}
-
-.intro-single .intro-content {
-  margin-top: 30px;
-}
-
-.intro-single .intro-title {
-  text-transform: uppercase;
+.highlight {
+  color: #00c6ac;
+  font-family: "Avenir", Tahoma, Arial, Helvetica, sans-serif;
+  font-weight: 100;
   font-size: 3rem;
-}
-
-.intro-single .breadcrumb {
-  background-color: transparent;
-  color: #0078ff;
-}
-
-.intro-single .breadcrumb .breadcrumb-item:before {
-  color: #cde1f8;
-}
-
-.intro-single .breadcrumb .breadcrumb-item.active {
-  color: #cde1f8;
-}
-
-.intro-single .breadcrumb a {
-  color: #fff;
+  font-family: Passion One;
 }
 
 .background {

@@ -1,15 +1,10 @@
-import React from 'react'
+import React from 'react';
+import Title from '../Title';
 import Col from 'react-bootstrap/Col';
 import Row from 'react-bootstrap/Row';
 
-import { DiJavascript1 } from 'react-icons/di';
-import { DiHtml5 } from 'react-icons/di';
-import { DiCss3 } from 'react-icons/di';
-import { FaVuejs } from 'react-icons/fa';
-import { FaReact } from 'react-icons/fa';
-import { FaJenkins } from 'react-icons/fa';
-import { FaDocker } from 'react-icons/fa';
-import { FaGitAlt } from 'react-icons/fa';
+import { DiJavascript1, DiHtml5, DiCss3 } from 'react-icons/di';
+import { FaVuejs, FaReact, FaJenkins, FaDocker, FaGitAlt } from 'react-icons/fa';
 
 import styles from './Skills.module.css';
 
@@ -18,8 +13,8 @@ class Skills extends React.Component {
 
   render() {
     return (
-      <div className="wrapper">
-        <h1 style={{textAlign: 'center', paddingBottom: '20px'}}>Skills</h1>
+      <div id="skills" className="wrapper">
+        <Title>SKILLS</Title>
         <Row>
           <Col lg={4}>
             <h2>Technologies</h2>

@@ -1,10 +1,10 @@
 import React from 'react'
 import { useStaticQuery, graphql } from 'gatsby'
 import Img from 'gatsby-image'
-
+import Title from '../Title';
 import styles from './About.module.css'
 
-const About = () => {
+const About = (props) => {
 
   const data = useStaticQuery(graphql` 
     query {
@@ -35,9 +35,9 @@ const About = () => {
   const { name, title, shortBio, image } = data.allContentfulPerson.edges[0].node;
 
   return (
-    <div className={styles.hero}>
+    <div id="about" className={styles.hero}>
       <div className="wrapper">
-      <h1 style={{textAlign: 'center', paddingBottom: '20px'}}>About</h1>
+      <Title>ABOUT</Title>
         <div className={styles.test}>
           <div className={styles.imgContainer}>
             <Img

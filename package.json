@@ -1,13 +1,11 @@
 {
-  "name": "contentful-starter-gatsby-blog",
-  "description": "Contentful Gatsby Starter Blog",
+  "name": "tommi-ilvonen-portfolio",
+  "description": "Tommi Ilvonen portfolio",
   "private": true,
   "version": "0.0.1",
-  "author": "Contentful <opensource@contentful.com>",
-  "bugs": {
-    "url": "https://github.com/contentful/starter-gatsby-blog/issues"
-  },
+  "author": "Tommi Ilvonen",
   "dependencies": {
+    "animate.css": "^3.7.2",
     "bootstrap": "^4.4.1",
     "gatsby": "^2.19.1",
     "gatsby-image": "^2.0.13",
@@ -21,24 +19,24 @@
     "lodash": "^4.17.11",
     "node-sass": "^4.13.1",
     "react": "^16.12.0",
+    "react-animate-on-scroll": "^2.1.5",
+    "react-animations": "^1.0.0",
     "react-bootstrap": "^1.0.0-beta.16",
     "react-dom": "^16.12.0",
     "react-helmet": "^5.2.0",
     "react-icons": "^3.9.0",
+    "react-scrollspy": "^3.4.2",
     "react-typed": "^1.2.0",
+    "smoothscroll-polyfill": "^0.4.4",
     "styled-components": "^5.0.1"
   },
-  "homepage": "https://github.com/contentful/starter-gatsby-blog#readme",
   "keywords": [
     "gatsby",
-    "contentful",
-    "starter"
+    "contentful"
   ],
-  "license": "MIT",
   "main": "n/a",
   "repository": {
-    "type": "git",
-    "url": "git+https://github.com/contentful/starter-gatsby-blog.git"
+    "type": "git"
   },
   "scripts": {
     "dev": "gatsby develop",

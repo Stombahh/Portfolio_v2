@@ -1,0 +1,46 @@
+a {
+  outline: 0;
+}
+
+ul {
+  margin: 0 !important;
+}
+.customsuunta {
+  justify-content: right !important;
+}
+
+.customNav {
+  background: radial-gradient(ellipse at top, #1b2735 0%, #090a0f 100%);
+}
+
+.navbar-brand {
+  font-size: 25pt !important;
+  color: white !important;
+  font-family: Passion One;
+}
+
+.nav-link {
+  font-size: 20pt;
+  color: white !important;
+  font-family: Passion One;
+}
+
+.nav-link:hover {
+  color: rgb(25, 74, 94) !important;
+}
+
+.active:global(.active) {
+  color: rgb(25, 74, 94) !important;
+  border-bottom: 2px solid rgb(25, 74, 94);
+}
+
+.custom-toggler .navbar-toggler-icon {
+  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgb(25, 74, 94)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E") !important;
+  padding: 0 !important;
+  width: 1em;
+  height: 1.2em;
+}
+
+.custom-toggler.navbar-toggler {
+  border-color: rgb(25, 74, 94) !important;
+}

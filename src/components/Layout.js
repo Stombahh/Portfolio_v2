@@ -1,7 +1,7 @@
 import React from 'react'
 import './base.css'
 // import Container from './Container'
-import Navigation from './Navigation/Navigation'
+import Navbar from './Navbar/Navbar'
 import Landing from './Landing/Landing'
 import Skills from './Skills/Skills'
 import About from './About/About'
@@ -17,7 +17,7 @@ class Template extends React.Component {
 
       <div>
         <Landing />
-        <Navigation />
+        <Navbar />
         <div style={{ maxWidth: 1500, margin: '0 auto'}}>
           <About />
           <Skills />
