@@ -56,7 +56,7 @@ class Skills extends React.Component {
               </Col>
               <Col lg={7} xs={4}>
                 <div className={styles.skill}>
-                  <h2>Knockout.js</h2>
+                  <h4>Knockout.js</h4>
                 </div>
               </Col>
               <Col lg={4} xs={4}>
@@ -93,7 +93,7 @@ class Skills extends React.Component {
             <Row>
               <Col lg={6} xs={4}>
                 <div className={styles.skill}>
-                  <h2>Scrum</h2>
+                  <h4>Scrum</h4>
                 </div>
               </Col>
             </Row>

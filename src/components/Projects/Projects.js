@@ -43,7 +43,7 @@ const Projects = () => {
   const projects = data.allContentfulProject.edges;
 
   return (
-    <div id="projects">
+    <div id="projects" className="wrapper">
       <Title>PROJECTS</Title>
       <CardColumns>
         {projects.map(({ node }) => {

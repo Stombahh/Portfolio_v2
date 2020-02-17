@@ -15,7 +15,7 @@ const Title = props => {
     width: 100px;
     height: 4px;
     background-color: #288477;
-    margin: 0 auto 20px auto;
+    margin: 0 auto 40px auto;
   `;
 
   return (
@@ -27,13 +27,6 @@ const Title = props => {
         animateOnce="true"
       >
         <Title>{props.children}</Title>
-      </ScrollAnimation>
-      <ScrollAnimation
-        animateIn="slideInLeft"
-        duration="1"
-        offset="10"
-        animateOnce="true"
-      >
         <Underline />
       </ScrollAnimation>
     </>

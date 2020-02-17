@@ -1,66 +1,64 @@
-.test {
-    display: grid;
-    margin: 0;
-    padding: 0;
-    list-style: none;
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-    grid-gap: 5vmin;
+.gridContainer {
+  display: grid;
+  grid-column-gap: 30px;
+  grid-template-columns: 1fr 2fr;
+}
+
+.gridImg {
+  /* max-width: 300px;
+  max-height: 300px; */
+  width: 100%;
+}
+
+.gridPerson {
+  width: 100%;
+  font-size: 14px;
+}
+
+/* Small devices (vertical phones, 576px and down) */
+@media screen and (max-width: 575.98px) {
+  .gridContainer {
+    grid-template-columns: 1fr;
   }
-  
-  /* .hero {
-    position: relative;
-    background: #000;
-    color: #fff;
-    text-align: center;
-  } */
-  
-  
-  /* img {
-    max-width: 400px;
-    max-height: 400px;
-  } */
-  
-  
-  .gatsby-image-wrapper {
-    /* display: flex; */
+  .gridImg {
+    margin-bottom: 30px;
   }
-  
-  
-  .imgContainer {
-    max-width: 400px;
-    max-height: 400px;
+}
+
+/* Small devices (landscape phones, 576px and up) */
+@media (min-width: 576px) {
+  .gridContainer {
+    grid-template-columns: 1fr 1fr;
   }
-  
-  .heroDetails {
-    /* position: absolute; */
-    /* background: rgba(0, 0, 0, 0.7); */
-    /* left: 50%; */
-    /* bottom: 0; */
-    /* transform: translate(-50%, 0); */
-    font-size: 14px;
-    /* padding: 0 0.5em; */
+}
+
+/* Medium devices (tablets, 768px and up */
+@media (min-width: 768px) {
+  .gridContainer {
+    grid-template-columns: 1fr 1fr;
   }
-  
-  @media(min-width: 600px) {
-    .heroDetails {
-      font-size: 16px;
-    }
+}
+
+/* Large devices (desktops, 992px and up) */
+@media (min-width: 992px) {
+  .gridContainer {
+    grid-template-columns: 1fr 2fr;
   }
-  
-  @media(min-width: 1000px) {
-    .heroDetails {
-      font-size: 20px;
-    }
+}
+
+/* Extra large devices (large desktops, 1200px and up)) */
+@media (min-width: 1200px) {
+  .gridContainer {
+    grid-template-columns: 1fr 2fr;
   }
-  
-  .heroHeadline {
-    margin: 0;
-  }
-  
-  .heroTitle {
-    margin: 0;
-    font-size: 1.125em;
-    font-weight: bold;
-  }
-  
+}
+
+.heroHeadline {
+  margin: 0;
+}
+
+.heroTitle {
+  margin: 0;
+  font-size: 1.125em;
+  font-weight: bold;
+}

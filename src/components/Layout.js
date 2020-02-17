@@ -18,12 +18,12 @@ class Template extends React.Component {
       <div>
         <Landing />
         <Navbar />
-        <div style={{ maxWidth: 1500, margin: '0 auto'}}>
+        {/* <div style={{ maxWidth: 1500, margin: '0 auto'}}> */}
           <About />
           <Skills />
           <Projects />
           <Contact />
-        </div>
+        {/* </div> */}
           <Footer />
       </div>
     )
