@@ -14,7 +14,7 @@ const Title = props => {
   const Underline = styled.div`
     width: 100px;
     height: 4px;
-    background-color: #288477;
+    background-color: #00c6ac;
     margin: 0 auto 40px auto;
   `;
 

@@ -1,13 +1,21 @@
 @font-face {
-  font-family: runescapeFont;
+  font-family: "runescapeFont";
   font-display: auto;
   src: url("RuneScape-Chat-07.ttf");
   font-style: normal;
 }
 
 @font-face {
-  font-family: Passion One;
+  font-family: "Passion One";
   font-display: auto;
   src: url("PassionOne-Regular.ttf");
   font-style: normal;
+}
+
+@font-face {
+  font-family: "Avenir";
+  font-weight: 400;
+  font-style: normal;
+  src: url("avenir-400.woff2") format("woff2");
+  font-display: swap;
 }

@@ -1,6 +1,24 @@
+.personImage {
+  border-radius: 10px;
+}
+
+.personName {
+  margin: 0;
+}
+
+.personTitle {
+  margin: 0;
+  font-size: 1.125em;
+  font-weight: bold;
+}
+
+.personBio {
+  font-size: 1.2em;
+}
+
 .gridContainer {
   display: grid;
-  grid-column-gap: 30px;
+  grid-column-gap: 50px;
   grid-template-columns: 1fr 2fr;
 }
 
@@ -9,6 +27,7 @@
   max-height: 300px; */
   width: 100%;
 }
+
 
 .gridPerson {
   width: 100%;
@@ -51,14 +70,4 @@
   .gridContainer {
     grid-template-columns: 1fr 2fr;
   }
-}
-
-.heroHeadline {
-  margin: 0;
-}
-
-.heroTitle {
-  margin: 0;
-  font-size: 1.125em;
-  font-weight: bold;
 }

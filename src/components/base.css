@@ -1,17 +1,9 @@
-@font-face {
-  font-family: "Avenir";
-  font-weight: 400;
-  font-style: normal;
-  src: url("/avenir-400.woff2") format("woff2");
-  font-display: swap;
-}
-
 body {
   font-family: "Avenir", Tahoma, Arial, Helvetica, sans-serif;
   font-size: 1em;
   line-height: 1.65;
   color: #373f49;
-  background-color: #1d1d1d;
+  background-color: #ffffff;
   margin: 0;
 }
 
@@ -27,7 +19,6 @@ body {
 
 img {
   display: block;
-  /* width: 100%; */
 }
 
 h1,
@@ -40,21 +31,20 @@ h3 {
 .wrapper {
   max-width: 1200px;
   margin: 0 auto;
-  padding: 20px;
-
+  padding: 40px 0;
 }
 
 /* Small devices (vertical phones, 576px and down) */
 @media screen and (max-width: 575.98px) {
   .wrapper {
-    width: 95vw;
+    width: 90vw;
   }
 }
 
 /* Small devices (landscape phones, 576px and up) */
 @media (min-width: 576px) {
   .wrapper {
-    width: 95vw;
+    width: 90vw;
   }
 }
 
@@ -77,38 +67,4 @@ h3 {
   .wrapper {
     width: 70vw;
   }
-}
-
-/**
- * article grid
- */
-.article-list {
-  margin: 0;
-  padding: 0;
-  list-style: none;
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-  grid-gap: 5vmin;
-}
-
-/**
- *
- */
-.section-headline {
-  padding: 0 0 0.4em 0;
-  margin: 0 0 5vmin 0;
-  border-bottom: 1px solid #ddd;
-}
-
-/**
- *
- */
-.list-inline {
-  margin: 0;
-  padding: 0;
-  list-style: none;
-}
-
-.list-inline li {
-  display: inline-block;
 }

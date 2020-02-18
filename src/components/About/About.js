@@ -44,12 +44,13 @@ const About = props => {
             fluid={image.fluid}
             style={{ maxHeight: "calc(50vh - 4rem)" }}
             imgStyle={{ objectFit: "contain" }}
+            className={styles.personImage}
           />
         </div>
         <div className={styles.gridPerson}>
-          <h3 className={styles.heroHeadline}>{name}</h3>
-          <p className={styles.heroTitle}>{title}</p>
-          <p>{shortBio.shortBio}</p>
+          <h3 className={styles.personName}>{name}</h3>
+          <p className={styles.personTitle}>{title}</p>
+          <p className={styles.personBio}>{shortBio.shortBio}</p>
         </div>
       </div>
     </div>

@@ -5,7 +5,13 @@ a {
 ul {
   margin: 0 !important;
 }
-.customsuunta {
+
+ul li {
+  display: inline-block;
+  list-style-type: none;
+}
+
+.navDirection {
   justify-content: right !important;
 }
 
@@ -26,12 +32,12 @@ ul {
 }
 
 .nav-link:hover {
-  color: rgb(25, 74, 94) !important;
+  color: #00c6ac !important;
 }
 
-.active:global(.active) {
-  color: rgb(25, 74, 94) !important;
-  border-bottom: 2px solid rgb(25, 74, 94);
+.is-active {
+  color: #00c6ac;
+  border-bottom: 2px solid #00c6ac;
 }
 
 .custom-toggler .navbar-toggler-icon {

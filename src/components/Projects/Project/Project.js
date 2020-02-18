@@ -20,7 +20,7 @@ const Project = ({ project }) => {
           {project.otherImages.map(({ fluid }) => {
             return (
               <Carousel.Item style={{ background: "black" }}>
-                <img src={fluid.src} />
+                <img src={fluid.src} alt="test" />
               </Carousel.Item>
             );
           })}
@@ -41,7 +41,7 @@ const Project = ({ project }) => {
   const [modalShow, setModalShow] = React.useState(false);
 
   return (
-    <div>
+    <div id="projects">
       <Card>
         <div style={{ overflow: "hidden" }}>
           <Img className="previewImage" fluid={project.previewImage.fluid} />
