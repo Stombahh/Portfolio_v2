@@ -50,3 +50,13 @@ ul li {
 .custom-toggler.navbar-toggler {
   border-color: rgb(25, 74, 94) !important;
 }
+
+@media (max-width: 1000px) {
+  ul li {
+    display: block;
+  }
+
+  .is-active {
+    width: 70px;
+  }
+}

@@ -15,7 +15,6 @@ class Landing extends React.Component {
       align-items: center;
       justify-content: center;
       margin: 0 0 -30px 0;
-
       animation: bounce 2s infinite;
     `;
     return (
@@ -44,7 +43,7 @@ class Landing extends React.Component {
             <Scroll type="id" element="about">
               <ArrowContainer>
                 <a href="#about">
-                  <MdKeyboardArrowDown style={{ height: "70px" }} />
+                  <MdKeyboardArrowDown style={{ height: "70px", width: "70px" }} />
                 </a>
               </ArrowContainer>
             </Scroll>

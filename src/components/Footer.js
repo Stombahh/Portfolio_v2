@@ -31,7 +31,7 @@ const Footer = () => {
       <Scroll type="id" element="home">
         <ArrowContainer>
           <a href="#home">
-            <MdKeyboardArrowUp style={{ height: "70px" }} />
+            <MdKeyboardArrowUp style={{ height: "70px", width: "70px" }} />
           </a>
         </ArrowContainer>
       </Scroll>
