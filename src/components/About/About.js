@@ -16,9 +16,7 @@ const About = props => {
             }
             title
             image {
-              fluid(
-                quality: 100
-              ) {
+              fluid(quality: 100) {
                 ...GatsbyContentfulFluid_tracedSVG
               }
             }
@@ -27,6 +25,7 @@ const About = props => {
       }
     }
   `);
+
   const {
     name,
     title,

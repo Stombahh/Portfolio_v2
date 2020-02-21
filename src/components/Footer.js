@@ -6,7 +6,7 @@ import { MdKeyboardArrowUp } from "react-icons/md";
 
 const Footer = () => {
   const FooterWrapper = styled.div`
-    height: 230px;
+    height: 240px;
     width: 100%;
     background: radial-gradient(ellipse at top, #1b2735 0%, #090a0f 100%);
   `;

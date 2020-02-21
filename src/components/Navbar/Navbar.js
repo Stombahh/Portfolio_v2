@@ -16,7 +16,7 @@ const Navbar = (props) => (
         <Navigationbar.Collapse id="basic-navbar-nav" className="navDirection">
           <Nav>
           <Scrollspy
-            items={['home', 'about', 'skills', 'projects', 'contact']}
+            items={['home', 'about', 'experience', 'skills', 'projects', 'contact']}
             currentClassName="is-active"
             offset={-200}
             >
@@ -28,6 +28,11 @@ const Navbar = (props) => (
               <li>
                 <Scroll type="id" element="about">
                   <Nav.Link href="#about">About</Nav.Link>
+                </Scroll>
+              </li>
+              <li>
+                <Scroll type="id" element="experience">
+                  <Nav.Link href="#experience">Experience</Nav.Link>
                 </Scroll>
               </li>
               <li>

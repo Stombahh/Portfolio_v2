@@ -31,7 +31,7 @@ class Landing extends React.Component {
               <span className="text-slider-items"></span>
               <strong className="text-slider">
                 <Typed
-                  strings={["Software Developer", "Scrum Master", "BBA in IT degree", "Gamer"]}
+                  strings={["Software Developer", "Scrum Master", "BBA in IT", "Gamer"]}
                   typeSpeed={80}
                   backDelay={1100}
                   backSpeed={30}

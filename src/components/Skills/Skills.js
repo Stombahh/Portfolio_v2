@@ -16,7 +16,7 @@ class Skills extends React.Component {
       <div id="skills" className="wrapper">
         <Title>SKILLS</Title>
         <Row>
-          <Col lg={6}>
+          <Col lg={6} className={styles.techColumn}>
             <h2>Technologies</h2>
             <Row>
               <Col lg={3} xs={4}>

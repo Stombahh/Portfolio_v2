@@ -36,3 +36,14 @@ h2, h4 {
     font-weight: 400;
     font-size: 2vh; 
 }
+
+.techColumn {
+    border-right: 3px solid #00c6ac;
+}
+
+@media  (max-width: 1000px) {
+    .techColumn {
+        border: none;
+    }
+
+}

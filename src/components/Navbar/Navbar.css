@@ -12,7 +12,7 @@ ul li {
 }
 
 .navDirection {
-  justify-content: right !important;
+  justify-content: flex-end;
 }
 
 .customNav {

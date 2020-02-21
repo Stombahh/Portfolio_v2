@@ -4,8 +4,9 @@ import favicon from "../../static/favicon.ico";
 import Helmet from "react-helmet";
 import Navbar from "../components/Navbar/Navbar";
 import Landing from "../components/Landing/Landing";
-import Skills from "../components/Skills/Skills";
 import About from "../components/About/About";
+import Experiences from "../components/Experiences/Experiences";
+import Skills from "../components/Skills/Skills";
 import Projects from "../components/Projects/Projects";
 import Contact from "../components/Contact/Contact";
 import Footer from "../components/Footer";
@@ -22,6 +23,7 @@ class RootIndex extends React.Component {
         <Landing />
         <Navbar />
         <About />
+        <Experiences />
         <Skills />
         <Projects />
         <Contact />
