@@ -28,8 +28,7 @@ class Landing extends React.Component {
               <h1 className="intro-title mb-4">
                 Hello, I'm <span className="highlight">Tommi Ilvonen</span>
               </h1>
-              <span className="text-slider-items"></span>
-              <strong className="text-slider">
+              <div className="text-slider">
                 <Typed
                   strings={["Software Developer", "Scrum Master", "BBA in IT", "Gamer"]}
                   typeSpeed={80}
@@ -37,7 +36,7 @@ class Landing extends React.Component {
                   backSpeed={30}
                   loop
                 />
-              </strong>
+              </div>
             </div>
             <SocialMediaButtons />
             <Scroll type="id" element="about">

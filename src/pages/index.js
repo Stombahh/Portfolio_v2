@@ -12,6 +12,7 @@ import Contact from "../components/Contact/Contact";
 import Footer from "../components/Footer";
 import "bootstrap/dist/css/bootstrap.min.css";
 import "animate.css/animate.min.css";
+require('typeface-passion-one');
 
 class RootIndex extends React.Component {
   render() {

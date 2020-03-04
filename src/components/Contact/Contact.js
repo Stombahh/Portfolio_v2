@@ -23,7 +23,10 @@ const Contact = () => {
       <p style={{ textAlign: "center" }}>
         Have a question or want to work together?
       </p>
-      <Form name="contact" noValidate validated={validated} onSubmit={handleSubmit} data-netlify="true" data-netlify-recaptcha="true">
+      <Form name="contact" method="post" noValidate validated={validated} onSubmit={handleSubmit} data-netlify="true" data-netlify-honeypot="bot-field">
+        <p className={styles.hidden}>
+          <label>Don’t fill this out if you're human: <input name="bot-field" /></label>
+        </p>
         <Form.Group controlId="formEmail">
           <Form.Control required type="email" placeholder="Your email" />
           <Form.Control.Feedback type="invalid">

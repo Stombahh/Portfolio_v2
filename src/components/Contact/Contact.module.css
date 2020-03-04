@@ -3,3 +3,7 @@
   max-width: 600px;
   padding: 2em;
 }
+
+.hidden {
+  display: none !important;
+}

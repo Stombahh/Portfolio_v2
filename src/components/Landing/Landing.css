@@ -21,6 +21,11 @@ h6 {
 span {
   font-family: runescapeFont;
   font-size: 26pt;
+  font-weight: 600;
+}
+
+.text-slider {
+  height: 52px;
 }
 
 .intro {

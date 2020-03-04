@@ -21,23 +21,24 @@ if (!spaceId || !accessToken) {
 }
 
 module.exports = {
-  pathPrefix: "/gatsby-contentful-starter",
   plugins: [
     "gatsby-transformer-remark",
     "gatsby-plugin-react-helmet",
     "gatsby-plugin-sharp",
-    {
-      resolve: "gatsby-source-contentful",
-      options: contentfulConfig
-    },
+    "gatsby-plugin-styled-components",
     {
       resolve: "gatsby-plugin-web-font-loader",
       options: {
         custom: {
-          families: ["runescapeFont", "Passion One"],
+          families: ["runescapeFont"],
           urls: ["/fonts/fonts.css"]
         }
       }
+    },
+    "gatsby-plugin-preload-fonts",
+    {
+      resolve: "gatsby-source-contentful",
+      options: contentfulConfig
     }
   ]
 };
