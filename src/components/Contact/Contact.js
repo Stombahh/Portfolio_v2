@@ -23,24 +23,24 @@ const Contact = () => {
       <p style={{ textAlign: "center" }}>
         Have a question or want to work together?
       </p>
-      <Form name="contact" method="post" noValidate validated={validated} onSubmit={handleSubmit} data-netlify="true" data-netlify-honeypot="bot-field">
+      <Form name="contact" method="post" noValidate validated={validated} onSubmit={handleSubmit} data-netlify="true" netlify-honeypot="bot-field">
         <p className={styles.hidden}>
           <label>Don’t fill this out if you're human: <input name="bot-field" /></label>
         </p>
         <Form.Group controlId="formEmail">
-          <Form.Control required type="email" placeholder="Your email" />
+          <Form.Control required type="email" name="email" placeholder="Your email" />
           <Form.Control.Feedback type="invalid">
             Please enter a valid email address
           </Form.Control.Feedback>
         </Form.Group>
         <Form.Group controlId="formName">
-          <Form.Control required type="text" placeholder="Your name" />
+          <Form.Control required type="text" name="name" placeholder="Your name" />
           <Form.Control.Feedback type="invalid">
             Please enter your name
           </Form.Control.Feedback>
         </Form.Group>
         <Form.Group controlId="formSubject">
-          <Form.Control required type="text" placeholder="Subject" />
+          <Form.Control required type="text" name="subject" placeholder="Subject" />
           <Form.Control.Feedback type="invalid">
             Please enter subject
           </Form.Control.Feedback>
@@ -52,7 +52,7 @@ const Contact = () => {
             rows="3"
             placeholder="Your message"
           />
-          <Form.Control.Feedback type="invalid">
+          <Form.Control.Feedback type="invalid" name="message">
             Please enter your message
           </Form.Control.Feedback>
         </Form.Group>
