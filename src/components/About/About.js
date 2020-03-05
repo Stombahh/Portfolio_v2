@@ -51,7 +51,7 @@ const About = props => {
         <div className={styles.gridPerson}>
           <h3 className={styles.personName}>{name}</h3>
           <p className={styles.personTitle}>{title}</p>
-          <p className={styles.personBio} dangerouslySetInnerHTML={{ __html: shortBio.childMarkdownRemark.html }} />
+          <div className={styles.personBio} dangerouslySetInnerHTML={{ __html: shortBio.childMarkdownRemark.html }} />
         </div>
       </div>
     </div>
