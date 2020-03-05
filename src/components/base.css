@@ -34,6 +34,14 @@ h3 {
   padding: 40px 0;
 }
 
+#about {
+  padding-top: 80px;
+}
+
+#contact {
+  padding-bottom: 80px;
+}
+
 /* Small devices (vertical phones, 576px and down) */
 @media screen and (max-width: 575.98px) {
   .wrapper {

@@ -10,3 +10,8 @@
 .description {
   font-size: 13pt;
 }
+
+.description ul li {
+  display: list-item;
+  list-style-type: disc;
+}

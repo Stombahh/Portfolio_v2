@@ -15,7 +15,9 @@ const Experiences = () => {
             period
             periodB
             description {
-              description
+              childMarkdownRemark {
+                html
+              }
             }
           }
         }

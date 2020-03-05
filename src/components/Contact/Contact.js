@@ -20,9 +20,9 @@ const Contact = () => {
   return (
     <div id="contact" className={styles.contactWrapper}>
       <Title>CONTACT</Title>
-      <p style={{ textAlign: "center" }}>
+      <h5 style={{ textAlign: "center" }}>
         Have a question or want to work together?
-      </p>
+      </h5>
       <Form
         name="contact"
         method="post"

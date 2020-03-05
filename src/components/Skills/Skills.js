@@ -48,12 +48,12 @@ class Skills extends React.Component {
                   <DiCss3 />
                   <h4>CSS3</h4>
                 </div>
-              </Col>
-              <Col lg={3} xs={4}>
+              </Col><Col lg={3} xs={4}>
                 <div className={styles.skill}>
-                  <p>C#</p>
+                  <h4>Gatsby</h4>
                 </div>
               </Col>
+              
               <Col lg={3} xs={4}>
                 <div className={styles.skill}>
                   <h4>Knockout.js</h4>
@@ -61,9 +61,15 @@ class Skills extends React.Component {
               </Col>
               <Col lg={3} xs={4}>
                 <div className={styles.skill}>
+                  <p>C#</p>
+                </div>
+              </Col>
+              <Col lg={12} xs={4}>
+                <div className={styles.skill}>
                   <p>SQL</p>
                 </div>
               </Col>
+              
             </Row>
           </Col>
           <Col lg={6}>
