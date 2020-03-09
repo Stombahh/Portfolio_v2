@@ -49,7 +49,7 @@ const Project = ({ project }) => {
         <Card.Body>
           <Card.Title>{project.title}</Card.Title>
           <Card.Text>{project.shortDescription}</Card.Text>
-          <Card.Text>{project.technologies}</Card.Text>
+          <Card.Text style={{color: "#00c6ac", fontWeight: "bold"}}>{project.technologies}</Card.Text>
         </Card.Body>
         <Card.Body style={{ paddingTop: "0" }}>
           <Button onClick={() => setModalShow(true)}>Learn more</Button>
