@@ -16,7 +16,7 @@
     "gatsby-plugin-styled-components": "^3.1.19",
     "gatsby-plugin-web-font-loader": "^1.0.4",
     "gatsby-source-contentful": "^2.1.78",
-    "gatsby-transformer-remark": "^2.1.6",
+    "gatsby-transformer-remark": "^5.25.1",
     "gh-pages": "^2.0.1",
     "jquery": "^3.4.1",
     "node-sass": "^4.13.1",
